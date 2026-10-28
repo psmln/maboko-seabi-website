@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: psmln/maboko-seabi-website
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/maboko-seabi-website/images/uploads"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name:
+"title", widget: "string" }
+      - { label: "Date", name:
+"date", widget: "datetime" }
+      - { label: "Image", name:
+"image", widget: "image", required:
+false }
+      - { label: "Body", name:
+"body", widget: "markdown" }
