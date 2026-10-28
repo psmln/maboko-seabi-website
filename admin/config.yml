@@ -13,12 +13,8 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name:
-"title", widget: "string" }
-      - { label: "Date", name:
-"date", widget: "datetime" }
-      - { label: "Image", name:
-"image", widget: "image", required:
-false }
-      - { label: "Body", name:
-"body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+    
